@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>My Calculator</title>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            body{
+                margin:20px auto 0;
+                background:azure;
+                width:400px;
+                border:1px solid coral;
+                border-radius:10px;
+                line-height:50px;
+                padding-left: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            
+            var num1=prompt("write number","Enter First Number");
+            document.write(num1 +"&nbsp;");
+            var sign=prompt("select sign","As U Like");
+            document.write(sign +"&nbsp;");
+            var num2=prompt("write number","");
+            document.write(num2 + "<br><br>");
+            if(sign== "-"){
+                var result=parseInt(num1) - Number(num2);
+                document.write("Answer : "+ result);
+            }else if(sign== "/"){
+                var result=Number(num1) / Number(num2);
+                document.write("Answer : "+ result);
+            }else if(sign== "*"){
+                var result=Number(num1) * Number(num2);
+                document.write("Answer : "+ result);
+            }else if(sign== "+"){
+                var result=Number(num1) + Number(num2);
+                document.write("Answer : "+ result);
+            }else{
+                alert("Sorry, you selected wrong sign, please right sign");
+            }
+            
+            
+            
+            
+
+            
+            
+        </script>
+        
+        
+    </body>
+</html>
